@@ -11,5 +11,5 @@ Example Laravel 5.7 User Management
 
 
 ## Thanks
-Thanks to **[Spatie](https://github.com/spatie)**
-Thanks to **[Creativ Tim](https://www.creative-tim.com)**
+* Thanks to **[Spatie](https://github.com/spatie)**
+* Thanks to **[Creativ Tim](https://www.creative-tim.com)**
