@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -23,6 +21,16 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // auth()->user()->assignRole('superuser');
+
         return view('home');
+    }
+
+    public function dataUser()
+    {
+        $data = User::all();
+        $title = 'Data User';
+
+        return view('backend.pages.user.index-user', compact('data', 'title'));
     }
 }
